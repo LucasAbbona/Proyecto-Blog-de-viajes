@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanuman:wght@100;300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hanuman', serif;
+}
+.landing_bg{
+    background-image: url("https://1.bp.blogspot.com/-oEzIzdkf1ss/UmcKsDzVXlI/AAAAAAAB7fI/t3ql551DUVU/s1600/cascadas-de-agua-cristalina-1600x1200-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 95vh;
+    box-shadow: 0px 10px 15px black;
+}
+.landing_blur{
+    background-color: rgba(0, 0, 0, 0.61);
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.navegation{
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+.navegation ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 50px;
+}
+.navegation ul:last-child{
+    margin-right: 50px;
+}
+.navegation ul a{
+    text-decoration: none;
+    color: white;
+    font-size: 19px;
+    font-family: 'Didact Gothic', sans-serif;
+    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.navegation ul a:hover{
+    text-decoration: solid underline #007B0C 4px;
+}
+.navegation ul .userName{
+    position: absolute;
+    left: 40px;
+}
+.home{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 25vh;
+    margin-left: 100px;
+}
+.home h1{
+    color: white;
+    font-size: 60px;
+}
+.home_desc{
+    color: white;
+    font-size: 14px;
+    width: 530px;
+}
+.dest_card{
+    position: absolute;
+    bottom: -130px;
+    right: 130px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0px 5px 10px black;
+}
+.dest_card img{
+    margin-top: 10px;
+    width: 380px;
+    margin-bottom: 5px;
+}
+.dest_card h3{
+    font-size: 18px;
+    font-weight: bold;
+}
+.posts_section{
+    margin-top: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.posts_section h2{
+    font-size: 60px;
+}
+.posts_section p{
+    margin-top: -10px;
+    width: 800px;
+    text-align: center;
+}
+.posts{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    background-color: white;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    box-shadow: 0px 5px 8px black;
+}
+.posts img{
+    width: 60%;
+}
+.post_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    padding-top: 40px;
+    padding-inline: 35px;
+    position: relative;
+}
+.post_content h3{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.post_content p{
+    font-size: 15px;
+}
+.post_content .post_likes{
+    position: absolute;
+    bottom: 13px;
+    left: 35px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+.post_likes i{
+    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.post_likes i:hover{
+    color: #007B0C;
+}
+.post_content .post_date{
+    position: absolute;
+    bottom: 13px;
+    right: 35px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.login_card{
+    margin: auto;
+    margin-top: 100px;
+    width: 90%;
+    background-image: url("../images/paisaje-natural-item-3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150px;
+    margin-bottom: 50px;
+    box-shadow: 0px 5px 8px black;
+}
+.login_card_blur{
+    background-color: #0000008c;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.login_card_blur h3{
+    color: white;
+    font-size: 22px;
+    width: 400px;
+}
+.btns{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.btns .signup_btn{
+    padding: 10px;
+    background-color: #01a757c9;
+    color: black;
+    text-decoration: none;
+    border: 1px solid black;
+    font-size: 20px;
+    font-weight: 600;
+    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.signup_btn:hover{
+    background-color: #01a757ee;
+}
+.btns .login_btn{
+    padding: 10px;
+    background-color: #114cc2c9;
+    color: black;
+    text-decoration: none;
+    border: 1px solid black;
+    font-size: 20px;
+    font-weight: 600;    
+    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.login_btn:hover{
+    background-color: #114cc2ee;
+}
+.BackTop{
+    bottom: 50px;
+    right: 70px;
+    position: fixed;
+    font-size: 40px;
+    color: black;
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px #000000;
+    z-index: 2000;
+}
